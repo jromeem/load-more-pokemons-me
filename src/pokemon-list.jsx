@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 const PokemonList = () => {
 
     const [pokeCount, setPokeCount] = useState(0);
+    const [totalCount, setTotalCount] = useState(0);
     const [listedPokemon, setListedPokemon] = useState([]);
     const [nextOffset, setNextOffset] = useState(0);
     const [displayAmount, setDisplayAmount] = useState(5);
@@ -19,6 +20,7 @@ const PokemonList = () => {
                 .then((response) => response.json())
                 .then((json) => {
                     console.log(json.results);
+                    setTotalCount(json.count);
                     setListedPokemon(json.results);
                     setPokeCount(json.results.length);
                     increaseOffset();
@@ -45,7 +47,7 @@ const PokemonList = () => {
 
     return <div>
         <div>
-            <p>Displaying {pokeCount} of 1281 results</p>
+            <p>Displaying {pokeCount} of 12 results</p>
             <input type="number" placeholder="display amount" value={displayAmount} onChange={(e) => setDisplayAmount(parseInt(e.target.value))}></input>
             { !loadedAll ? 
                 <div>
