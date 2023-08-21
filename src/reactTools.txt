@@ -1,0 +1,15 @@
+
+learning resources:
+https://reactpractice.dev/exercise/build-a-paginated-pokemons-list-with-a-load-more-button-starting-from-failing-unit-tests/
+https://www.youtube.com/watch?v=27f3B1qndW8&ab_channel=CodeBucks
+
+tools used
+https://jsonplaceholder.typicode.com/guide/
+https://mswjs.io/
+
+by concepts:
+    - load more pokemon:
+        https://reactpractice.dev/exercise/build-a-paginated-pokemons-list-with-a-load-more-button-starting-from-failing-unit-tests/
+        - using fetch in react:
+            https://www.youtube.com/watch?v=27f3B1qndW8&ab_channel=CodeBucks
+            https://jsonplaceholder.typicode.com/guide/
